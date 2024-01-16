@@ -1,0 +1,172 @@
+:root {
+    --bg: #531515;
+    --bg-pad: #972525;
+    --bg-key-operation: #EDB138;
+    --bg-key-operation-shadow: #edb13887;
+    --bg-key-number: #F2BD93;
+    --bg-key-number-shadow: #f2be9391;
+    --bg-key-result: #657CBD;
+    --bg-key-result-shadow: #657cbd90;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--bg);
+    font-size: 28px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+.calculate {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Tektur', sans-serif;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: left;
+    font-size: 48px;
+}
+
+.result {
+    background-color: var(--bg-pad);
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: var(--bg-key-operation);
+}
+
+.button-calculate {
+    border-radius: 10px;
+    background-color: #972525;
+    padding: 30px;
+}
+
+.key-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--bg-key-number);
+    color: var(--bg-pad);
+    box-shadow: var(--bg-key-number-shadow) 0px 4px 0px 0px;
+    margin: 10px;
+    user-select: none;
+}
+
+.key-operate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--bg-key-operation);
+    color: var(--bg-pad);
+    box-shadow: var(--bg-key-operation-shadow) 0px 4px 0px 0px;
+    margin: 10px;
+    user-select: none;
+}
+
+.button-reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--bg-key-result);
+    color: var(--bg-key-number);
+    box-shadow: var(--bg-key-result-shadow) 0px 4px 0px 0px;
+    margin: 10px;
+    user-select: none;
+}
+
+.button-equal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--bg-key-result);
+    color: var(--bg-key-number);
+    box-shadow: var(--bg-key-result-shadow) 0px 4px 0px 0px;
+    margin: 10px;
+    user-select: none;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.footer-right {
+    position: absolute;
+    bottom: 0;
+    background-color: #330c0c;
+}
+
+.footer-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+@media (max-width: 720px) {
+    body {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .key-button {
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }
+
+    .key-operate {
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }
+
+    .button-reset {
+        width: 130px;
+        margin: 5px;
+        height: 60px;
+    }
+
+    .button-equal {
+        width: 130px;
+        margin: 5px;
+        height: 60px;
+    }
+
+    .footer-text {
+        font-size: 8px;
+    }
+}
